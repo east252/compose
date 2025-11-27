@@ -8,6 +8,7 @@ My docker compose repository
 2003 - NPM https  
 2004 - Postgres DB  
 2005 - SiYuan Markdown Editor  
+2006 - Ubuntu  
 
 ## Typical Compose
 ```
