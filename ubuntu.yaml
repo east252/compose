@@ -1,0 +1,17 @@
+services:
+  ubuntu:
+    image: lscr.io/linuxserver/webtop:ubuntu-xfce
+    container_name: ubuntu
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ubuntu:/config
+    ports:
+      - 2006:3001  # HTTPS
+    shm_size: "1gb"
+    restart: unless-stopped
+
+volumes:
+  ubuntu:
