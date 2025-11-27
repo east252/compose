@@ -7,7 +7,7 @@ services:
     container_name: siyuan
     command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=add-a-better-password!!]
     ports:
-      - "2004:6806"
+      - "2005:6806"
     volumes:
       - siyuan:/siyuan/workspace
     environment:
