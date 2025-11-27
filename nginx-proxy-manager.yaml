@@ -5,9 +5,9 @@ services:
     container_name: nginx-proxy-manager
     restart: unless-stopped
     ports:
-      - "80:80" # HTTP to HTTPS redirect
-      - "81:81" # Proxy Management
-      - "443:443" # HTTPS
+      - "2002:80" # HTTP to HTTPS redirect
+      - "2001:81" # Proxy Management
+      - "2003:443" # HTTPS
     environment:
       - PUID=1000
       - PGID=1000
