@@ -1,0 +1,20 @@
+# SiYuan
+# SiYuan is an editor much like Obsidian
+
+services:
+  siyuan:
+    image: b3log/siyuan:latest
+    container_name: siyuan
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=add-a-better-password!!]
+    ports:
+      - "2004:6806"
+    volumes:
+      - siyuan:/siyuan/workspace
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    restart: unless-stopped
+
+volumes:
+  siyuan:
