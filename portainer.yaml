@@ -7,7 +7,7 @@ services:
     container_name: portainer
     restart: always
     ports:
-      - "2000:2000"
+      - "2000:9443"
     environment:
       - PUID=1000
       - PGID=1000
