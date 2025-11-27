@@ -1,6 +1,13 @@
 # compose
 My docker compose repository
 
+## Port Tracker
+2000 - Portainer
+2001 - NPM http
+2002 - NPM management
+2003 - NPM https
+2004 - postgres
+
 ## Typical Compose
 ```
 # Typical information line about the docker
