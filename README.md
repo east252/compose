@@ -10,6 +10,7 @@ My docker compose repository
 2005 - SiYuan Markdown Editor  
 2006 - Ubuntu  
 2007 - n8n  
+2008 - OpenWebUI  
 
 ## Typical Compose
 ```
