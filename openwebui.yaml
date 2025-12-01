@@ -14,7 +14,7 @@ services:
       - OLLAMA_BASE_URL=http://host.docker.internal:11434 # if Ollama is on host
       # - OLLAMA_BASE_URL=http://ollama:11434 # if Ollama is in a separate docker
     volumes:
-      - openwebui: /app/backend/data
+      - openwebui:/app/backend/data
     extra_hosts:
       - "host.docker.internal:host-gateway" # Helps Ollama connect if running on host
 
