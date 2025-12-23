@@ -1,6 +1,23 @@
 # compose
 My docker compose repository
 
+## Getting Started
+
+### Setting up Environment Variables
+
+This repository uses environment variables to avoid hard-coding secrets in the compose files. Before running the services:
+
+1. Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and fill in your secure passwords and secrets:
+   - `SIYUAN_AUTH_CODE` - Authentication code for SiYuan editor
+   - `POSTGRES_PASSWORD` - Password for PostgreSQL database
+
+3. The `.env` file is git-ignored to prevent accidentally committing secrets.
+
 ## Port Tracker
 2000 - Portainer  
 2001 - NPM http  

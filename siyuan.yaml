@@ -5,7 +5,7 @@ services:
   siyuan:
     image: b3log/siyuan:latest
     container_name: siyuan
-    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=add-a-better-password!!]
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${SIYUAN_AUTH_CODE}']
     ports:
       - "2005:6806"
     volumes:
